@@ -14,37 +14,37 @@ const Component = () => {
   return (
     <div className="techstack">
       <Slider
-        width="250px"
+        width="200px"
         duration={30}
         pauseOnHover={true}
         blurBorders={false}
         blurBorderColor={"#fff"}>
         <Slider.Slide>
-          <img src={php} alt="any" className="w-36" />
+          <img src={php} alt="any" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src= {react} alt="any2" className="w-36" />
+          <img src= {react} alt="any2" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={wordpress} alt="any3" className="w-36" />
+          <img src={wordpress} alt="any3" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={laravel} alt="any3" className="w-36" />
+          <img src={laravel} alt="any4" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={mysql} alt="any3" className="w-36" />
+          <img src={mysql} alt="any5" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={figma} alt="any3" className="w-36" />
+          <img src={figma} alt="any6" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={shopify} alt="any3" className="w-36" />
+          <img src={shopify} alt="any7" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={bitbucket} alt="any3" className="w-36" />
+          <img src={bitbucket} alt="any8" className="w-20" />
         </Slider.Slide>
         <Slider.Slide>
-          <img src={js} alt="any3" className="w-36" />
+          <img src={js} alt="any9" className="w-20" />
         </Slider.Slide>
       </Slider>
     </div>

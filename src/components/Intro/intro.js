@@ -1,22 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./intro.css";
-import bg from "../../assets/image.png";
+import bg from "../../assets/my-img.png";
 import btnImg from "../../assets/download_cv.png";
 import resume from "../../assets/supun-resume.pdf";
 
-// Move titles outside the component
 const titles = ["UI/UX Designer", "Web Developer", "Software Engineer"];
 
 const Intro = () => {
   const [currentTitle, setCurrentTitle] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTitle((prev) => (prev + 1) % titles.length);
-    }, 3000); // Change title every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []);  // empty dependency array is correct now
+  }, []);
 
   return (
     <section id="intro">
@@ -27,13 +36,19 @@ const Intro = () => {
           <span className="titleAnimation">{titles[currentTitle]}</span>
         </span>
         <p className="introPara">
-          I create visually appealing and user-friendly digital experiences
-          <br />
-          with a focus on clean design and efficient code.
+          {isMobile ? (
+            "I create beautiful, user-friendly digital experiences with clean design."
+          ) : (
+            <>
+              I create visually appealing and user-friendly digital experiences
+              <br />
+              with a focus on clean design and efficient code.
+            </>
+          )}
         </p>
         <a href={resume} download="supun-resume.pdf">
           <button className="btn">
-            <img src={btnImg} alt="Hire" className="btnImg" /> Download CV
+            <img src={btnImg} alt="Download" className="btnImg" /> Download CV
           </button>
         </a>
       </div>

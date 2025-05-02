@@ -7,58 +7,70 @@ import Software from '../../assets/software.png';
 import Seo from '../../assets/seo.png';
 import Databse from '../../assets/database.png';
 
+const skillsData = [
+  {
+    id: 1,
+    title: "Software Development",
+    description: "Expertise in building robust software solutions using modern technologies and best practices.",
+    icon: Software,
+    alt: "Software Development"
+  },
+  {
+    id: 2,
+    title: "Website Design",
+    description: "Creating beautiful, responsive websites with focus on user experience and performance.",
+    icon: WebDesign,
+    alt: "Website Design"
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    description: "Designing intuitive user interfaces with exceptional user experience principles.",
+    icon: UIDesign,
+    alt: "UI/UX Design"
+  },
+  {
+    id: 4,
+    title: "App Design",
+    description: "Crafting mobile applications with elegant designs and smooth interactions.",
+    icon: AppDesign,
+    alt: "App Design"
+  },
+  {
+    id: 5,
+    title: "SEO",
+    description: "Optimizing websites to rank higher in search engines and drive organic traffic.",
+    icon: Seo,
+    alt: "SEO"
+  },
+  {
+    id: 6,
+    title: "Database Management",
+    description: "Designing and managing efficient database systems for optimal performance.",
+    icon: Databse,
+    alt: "Database Management"
+  }
+];
+
 const Skills = () => {
     return (
         <section id='skills' className='py-5'>
-            <span className="skillTitle">What I do</span>
-            <span className="skillDesc">
-                I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. I am proficient in HTML, CSS, and JavaScript, as well as design software such as Adobe Photoshop and Illustrator.
-            </span>
+            <h2 className="skillTitle">What I do</h2>
+            <p className="skillDesc">
+                I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. 
+                I have a strong understanding of design and a keen eye for detail. 
+                I am proficient in HTML, CSS, and JavaScript, as well as design software such as Adobe Photoshop and Illustrator.
+            </p>
             <div className="skillBars">
-            <div className="skillBar">
-                    <img src={Software} alt="AppDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>Software Development</h2>
-                        <p>You can write text related to mobile app development.</p>
-                    </div>
+              {skillsData.map((skill) => (
+                <div className="skillBar" key={skill.id}>
+                  <img src={skill.icon} alt={skill.alt} className="skillBarImg" />
+                  <div className="skillBarText">
+                    <h3>{skill.title}</h3>
+                    <p>{skill.description}</p>
+                  </div>
                 </div>
-                <div className="skillBar">
-                    <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>Website Design</h2>
-                        <p>This demo text can be changed while making the production ready website.</p>
-                    </div>
-                </div>
-                <div className="skillBar">
-                    <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>UI/UX Design</h2>
-                        <p>This is a demo text, you can write your own content here.</p>
-                    </div>
-                </div>
-
-                <div className="skillBar">
-                    <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>App Design</h2>
-                        <p>You can write text related to mobile app development.</p>
-                    </div>
-                </div>
-
-                <div className="skillBar">
-                    <img src={Seo} alt="AppDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>SEO</h2>
-                        <p>You can write text related to mobile app development.</p>
-                    </div>
-                </div>
-                <div className="skillBar">
-                    <img src={Databse} alt="AppDesign" className="skillBarImg" />
-                    <div className="skillBarText">
-                        <h2>Database Management</h2>
-                        <p>You can write text related to mobile app development.</p>
-                    </div>
-                </div>
+              ))}
             </div>
         </section>
     );
