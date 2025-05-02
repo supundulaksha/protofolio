@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/protofolio/static/css/main.f5a1dadb.css",
+    "main.js": "/protofolio/static/js/main.0feb612d.js",
+    "static/media/ABC.png": "/protofolio/static/media/ABC.d0b8a4b5a3526e3b8667.png",
+    "static/media/smart.png": "/protofolio/static/media/smart.50d94faec78c4bd576ba.png",
+    "static/media/slcyelonway.png": "/protofolio/static/media/slcyelonway.7bedb5b05471631db8c5.png",
+    "static/media/my-img.png": "/protofolio/static/media/my-img.972dba3781a52af9f67b.png",
+    "static/media/supun-resume.pdf": "/protofolio/static/media/supun-resume.382ad51238dde49649e3.pdf",
+    "static/media/database.png": "/protofolio/static/media/database.7e025b3f27935465eec1.png",
+    "static/media/x-twitter.png": "/protofolio/static/media/x-twitter.301b56fae40f909a736f.png",
+    "static/media/smapath.jpg": "/protofolio/static/media/smapath.c50c9ab031ce21a54068.jpg",
+    "static/media/webdesign.png": "/protofolio/static/media/webdesign.814a129db909adcf3627.png",
+    "static/media/software.png": "/protofolio/static/media/software.e2d62a30afb63edfeb2c.png",
+    "static/media/Bahunia.jpg": "/protofolio/static/media/Bahunia.352dd4b37236992cad0a.jpg",
+    "static/media/Appdesign.png": "/protofolio/static/media/Appdesign.75deed0c6c425ff73b53.png",
+    "static/media/arogya.jpg": "/protofolio/static/media/arogya.a46c71e1c36248a6852e.jpg",
+    "static/media/seo.png": "/protofolio/static/media/seo.72c2aacf2846f55fc4bc.png",
+    "static/media/UIUX.png": "/protofolio/static/media/UIUX.74956ea9d0e5ae752fe2.png",
+    "static/media/download_cv.png": "/protofolio/static/media/download_cv.acad35bb281efdc25732.png",
+    "static/media/instagram.png": "/protofolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
+    "index.html": "/protofolio/index.html",
+    "main.f5a1dadb.css.map": "/protofolio/static/css/main.f5a1dadb.css.map",
+    "main.0feb612d.js.map": "/protofolio/static/js/main.0feb612d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5a1dadb.css",
+    "static/js/main.0feb612d.js"
+  ]
+}
